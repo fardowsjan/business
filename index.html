@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* start____________________ of _________________ .box */
+        .box{
+            width: 100%;
+            height: 200px;
+            background:rgba(25, 26, 51, 0.7);
+            >section{
+                width: 100%;
+                /* border: 3px solid black; */
+                &:nth-of-type(1){
+                    height: 30%;
+                    display: flex;
+                    justify-content: center;
+                    border-bottom: 1px solid gray;
+                    >div{
+                        width: 80%;
+                        height: 100%;
+                        /* background-color: red; */
+                        display: flex;
+                        justify-content: space-between;
+                        margin-left: 50px;
+                        /* end______________ of ____________ div */
+                        >ul{
+                            list-style: none;
+                            display: flex;
+                            justify-content: center;
+                            >li{
+                                padding-inline: 20px;
+                                text-align: center;
+                                margin-top: 15px;
+                                text-transform: capitalize;
+                                color: white;
+                                font-size: 16px;
+                            }
+                        }
+                        /* end______________ of _______________ ul */
+                    }
+                    >*{
+                        min-width: 200px;
+                        height: 100%;
+                        /* border: 3px solid white; */
+                    }
+                    >nav{
+                        width: 80%;
+                        height: 100%;
+                        >span{
+                            height: 100%;
+                            >a{
+                                height: 100%;
+                                color: white;
+                                float: right;
+                                padding-inline: 10px;
+                                line-height: 50px;
+                            }
+                        }
+                    }
+                    /* end_______________ of _______________ nav */
+                }
+                /* end ===== of -------- section1 */
+
+                /* steart ===== of ===== section2 */
+                &:nth-of-type(2){
+                    height: 70%;
+                    width: 100%;
+                    /* border: 3px solid black; */
+                    display: flex;
+                    >*{
+                        min-width: 300px;
+                        height: 100%;
+                        /* border: 3px solid red; */
+                    }
+                    >figure{
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    /* end _________ of _________ figure */
+                    >ul{
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        >li{
+                            height: 100%;
+                            list-style: none;
+                            padding-inline: 17px;
+                            >a{
+                                height: 100%;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                                font-size: 18px;
+                                text-transform: capitalize;text-decoration: none;
+                                transition: .5s;
+                            }
+                            &:hover>a{
+                                color: #FF5F13;
+                            }
+                        }
+                    }
+                    /* end ______________ of ______________ ul */
+                    >div{
+                        width: 20%;
+                        height: 70px;
+                        /* border: 3px solid black; */
+                        display: flex;
+                        justify-content: center;
+                        margin-left: 20px;
+                        margin-top: 35px;
+                        background-color: #FF5F13;
+                        border-radius: 6px;
+                        position: relative;
+                        margin-right: 20px;
+                        &::after{
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 100%;
+                            background-color: #fb5102;
+                            position: absolute;
+                            border-radius: 6px;
+                            left:0;
+                            top: 0;
+                            transition: .3s;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                        /* end _________ of ___________ div */
+                        >li{
+                            height: 100%;
+                            text-align: center;
+                            line-height: 70px;
+                            list-style: none;
+                            display: flex;
+                            justify-content: center;
+                            >a{
+                                height: 100%;
+                                color: white;
+                                letter-spacing: 1px;
+                                text-decoration: none;
+                                font-size: 16px;
+                                text-transform: capitalize;
+                                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                                position: absolute;
+                                z-index:1;
+                            }
+                        }
+                        /* end _____________ of _____________ li */
+                    }
+                    /* end_______________ of ============ div */
+                }
+                /* end ------ of ======= section2 */
+            }
+            /* end ====== of ========= section */
+        }
+        /* end __________ of ___________ .box */
+        /* start___________________ of ___________________ #section_img */
+        #section_img{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            >img{
+                width: 100%;
+                height: 100%;
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-image:(0deg, rgba(2, 8, 52, 0.74902) 0%, rgba(2, 8, 52, 0.14902) 100%);
+                }
+            }
+            /* end__________________ of _______________ img */
+            >header{
+                width: 100%;
+                height: 90%;
+                /* border: 3px solid gold; */
+                position: absolute;
+                top: 10%;
+                left: 0;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 40PX;
+                    border: 1px solid #FF5F13;
+                    position: absolute;
+                    top: 20.50%;
+                    left: 9.0%;
+                }
+                >span{
+                    width: 400px;
+                    height: 50px;
+                    /* border: 3px solid red; */
+                    text-align: center;
+                    line-height: 50px;
+                    margin-top: 100px;
+                    user-select: none;position: absolute;
+                    top: -2px;
+                    left: 158px;
+                    color: #FFFFFF;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                }
+            }
+            /* end _________________ of _____________________ header */
+            >section{
+                width: 80%;
+                height: 300px;
+                /* border: 3px solid gold; */
+                position: absolute;
+                top: 214px;
+                left:200px;
+                >h1{
+                    width: 100%;
+                    height: 50%;
+                    /* border: 2px solid red; */
+                    font-size: 150PX;
+                    color: #FF5F13;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    user-select: none;
+                }
+                >h2{
+                    width: 74%;
+                    height: 50%;
+                    /* border: 2px solid red; */
+                    font-size: 118PX;
+                    color: #FF5F13;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    text-align: center;
+                    margin-left: 31px;
+                    user-select: none;
+                }
+            }
+            /* end ______________ of _____________ section */
+            >footer{
+                width: 100%;
+                height: 90%;
+                /* border: 3px solid gold; */
+                position: absolute;
+                bottom: 10%;
+                left: 0;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 40PX;
+                    border: 1px solid #FF5F13;
+                    position: absolute;
+                    bottom: 13.90%;
+                    left: 9.05%;
+                }
+                >span{
+                    width: 400px;
+                    height: 50px;
+                    /* border: 3px solid red; */
+                    text-align: center;
+                    line-height: 50px;
+                    margin-top: 100px;
+                    user-select: none;position: absolute;
+                    bottom: 63px;
+                    left: 32px;
+                    color: #FFFFFF;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                }
+            }
+            /* end __________________ of ______________ footer */
+        }
+        /* end __________________ of ________________ #section_img */
+        /* start ___________________ of _____________________ .header_selctor */
+        .header_selctor{
+            width: 100%;
+            height: 100vh;
+            /* border: 3px solid black; */
+            position: relative;
+            >section{
+                width: 100%;
+                height: 200px; 
+                /* border: 3px solid gold; */
+                >h1{
+                    width: 88%;
+                    height: 100%;
+                    font-size: 70px;
+                    position: absolute;
+                    top: 113px;
+                    left:142px;
+                    &::after{
+                        content:'OUR SERVICE';
+                        display: block;
+                        font-size: 120PX;
+                        color: transparent;
+                        -webkit-text-stroke: 5px black;
+                        position: absolute;
+                        top: -76px;
+                        right: 600px;
+                        opacity: 0.1;
+                    }
+                }
+            }
+            /* end ________________ of ____________ section */
+            >div{
+                width: 100%;
+                height: 70%;
+                /* border: 3px solid gold; */
+                display: flex;
+                >.row{
+                    width: 90%;
+                    height: 100%;
+                    /* border: 3px solid green; */
+                    display: flex;
+                    margin-left: 70px;
+                    justify-content: space-between;
+                    >figure{
+                        width: 30%;
+                        height: 100%;
+                        /* border: 3px solid purple; */
+                        border-bottom: 2px solid #FF5F13;
+                        >img{
+                            width: 100%;
+                        }
+                        /* end _________________ of _______________ img */
+                        >h4{
+                            height: 40%;
+                            /* width: 100%; */
+                            /* border: 3px solid red; */
+                            text-align: center;
+                            font-weight: 700;
+                            margin-top: 10px;
+                            position: relative;
+                            &::after{
+                                content:'+';
+                                display: block;
+                                display: flex;
+                                justify-content: center;
+                                width: 40px;
+                                height: 40px;
+                                /* border: 3px solid black; */
+                                text-align: center;
+                                font-size: 30px;
+                                position: absolute;
+                                bottom: 63px;
+                                left: 180px;
+                                transition: .4s;
+                                cursor: pointer;
+                            }
+                            &:hover::after{
+                                background-color: #FF5F13;
+                                color: white;
+                            }
+                            >a{
+                                width: 100%;
+                                height: 100%;
+                                font-size: 24px;
+                                color: black;
+                                text-decoration: none;
+                                &:nth-last-of-type(1){
+                                    color: black;
+                                    text-align: center;
+                                    position: absolute;
+                                    bottom: -100px;
+                                    right: 60px;
+                                    font-size: 12px;
+                                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                                }
+                            }
+                        }
+                        /* end ____________ of _____________ h4 */
+                    }
+                    /* end_____________ of ______________ figuer */
+                }
+                /* end _______________ of _________________ .row */
+            }
+            /* end _____________ of _________________div */
+        }
+        /* end ___________________ of ___________________ .header_selctor */
+        /* start________________ of ____________ #section_information */
+        #section_information{
+            width: 100%;
+            height: 100vh;
+            /* border: 3px solid black; */
+            display: flex;
+            margin-top: 150px;
+            >div{
+                width: 100%;
+                height: 100%;
+                /* border: 3px solid gold; */
+            }
+            >.left_content{
+                width: 100%;
+                height: 100%;
+                /* border: 2px solid darkblue; */
+                font-size: 50px;
+                text-align: center;
+                /* line-height: 150px; */
+                margin-top: 30px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                margin-left: 20px;
+                >h2{
+                    width: 80%;
+                    /* height: 100%; */
+                    color: #0e132a;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    font-family: "Teko", sans-serif;
+                }
+                >.suport_caption{
+                    width: 100%;
+                    height: 100px;
+                    /* border: 3px solid red; */
+                    font-size: 18px;
+                    margin-top: 80px;
+                    >P{
+                        width: 82%;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        text-transform: capitalize;
+                        font-size: 17px;
+                        font-weight: 700;
+                        color: #0b0b2b;
+                    }
+                }
+                /* end ________________ of _______________ .suport_caption */
+                >.pera_top{
+                    width: 90%;
+                    height: 100px;
+                    /* border: 3px solid black; */
+                    margin-top: 50px;
+                    font-size: 19px;
+                    margin-left: 20px;
+                }
+                /* end _____________ of ______________-- .pera_top */
+                >.click{
+                    width: 180px;
+                    height: 70px;
+                    /* border: 2px solid green; */
+                    margin-top: 40px;
+                    margin-left: 20px;
+                    background-color: #FF5F13;
+                    border-radius:6px;
+                    position: relative;
+                    &::after{
+                        content:'';
+                        display: block;
+                        height: 100%;
+                        width: 0;
+                        position: absolute;
+                        background-color: #fb5102;
+                        top: 0;
+                        left: 0;
+                        transition: .5s;
+                        border-radius: 6px;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
+                    >li{
+                        width: 100%;
+                        height: 100%;
+                        list-style: none;
+                        position: absolute;
+                        z-index: 1;
+                        >a{
+                            font-size: 17px;
+                            color: white;
+                            text-decoration: none;
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        }
+                    }
+                }
+                /* end ____________ of ______________.click */
+            }
+            /* end ____________ of ______________ left_content */
+            >.right_img{
+                width: 100%;
+                height: 100%;
+                /* border: 3px solid black; */
+                /* background-color: #1f2b7b; */
+                position: relative;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 6px;
+                }
+                >.row{
+                    width: 200px;
+                    height: 200px;
+                    background-color: #1f2b7b;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 6px;
+                    >span{
+                        width: 100%;
+                        font-size: 50px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-family: "Barlow", sans-serif;
+                        line-height: 1.2;
+                        position: absolute;
+                        top: 50px;
+                        left: 0;
+                    }
+                    >p{
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;
+                        font-size: 40px;
+                        text-overflow: 2px;
+                        top: 100px;
+                        left: 0;
+                        color: white;
+                    }
+                }
+                /* end ___________________ of _____________.row */
+            }
+            /* end _____________ of ____________ .right_img */
+        }    
+        /* end ___________________ of ____________________ #section_information */
+        /* start____________________________ .container */
+        .container{
+            width: 100%;
+            height: 230vh;
+            /* border: 3px solid black; */
+            margin-top: 80px;
+            justify-content: center;
+            >nav{
+                width: 90%;
+                height: 300px;
+                /* border: 3px solid green; */
+                display: flex;
+                >section{
+                    width: 100%;
+                    height: 100%;
+                    /* border: 3px solid red; */
+                    &:nth-of-type(1){
+                        color: #0e132a;
+                        /* font-size: 70px; */
+                        font-size: 50px;
+                        text-align: center;
+                        font-weight: 700;
+                        line-height: 300px;
+                        text-transform: uppercase;
+                        font-family: "Teko", sans-serif;
+                        position: relative;
+                        &::after{
+                            content: 'GELLARY';
+                            display: block;
+                            font-size: 160px;
+                            width: 100%;
+                            color:transparent;
+                            -webkit-text-stroke: 1px #f6f7f8;
+                            position: absolute;
+                            top: -40px;
+                            left: 50px;
+                            z-index: -1;
+                        }
+                    }
+                    /* end ____________ of ______________ section1 */
+                    &:nth-of-type(2){
+                        width: 100%;
+                        >li{
+                            width: 100%;
+                            height: 100%;
+                            font-size: 25px;
+                            text-align: center;
+                            line-height: 400px;
+                            list-style: none;
+                            >a{
+                                color: #161e46;
+                                text-transform: capitalize;
+                                padding-left: 20px;
+                                text-decoration: none;
+                                &:nth-of-type(1){
+                                    color: #FF5F13;
+                                }
+                            }
+                        }
+                    }
+                    /* end ___________ of ____________ section2 */
+                }
+            }
+            /* end _____________ of ______________ nav */
+            >.project_img{
+                width: 100%;
+                height: 100%;
+                /* border: 3px solid black; */
+                >section{
+                    width: 90%;
+                    height: 56%;
+                    /* border: 2px solid red; */
+                    margin: 5% auto;
+                    display: flex;
+                    justify-content:space-evenly;
+                    flex-wrap: wrap;
+                    >figure{
+                        width: 370px;
+                        height: 520px;
+                        /* border: 2px solid gold; */
+                        position: relative;
+                        transition: .6s;
+                        &::after{
+                            content:'+';
+                            display: block;
+                            color: white;
+                            font-size: 30px;
+                            text-align: center;
+                            width: 40px;
+                            height: 40px;
+                            background-color: #FF5F13;
+                            position: absolute;
+                            bottom: 108px;
+                            right: 0;
+                            opacity: 0;
+                            transition: .6s;
+                        }
+                        &:hover::after{
+                            opacity: 1;
+                        }
+                        /* end _______________ of ______________ ::after */
+                        >img{
+                            width: 100%;
+                        }
+                        /* end _____________ of ____________ img */
+                        >figcaption{
+                            width: 100%;
+                            color: #fafafa;
+                            justify-content: flex-start;
+                            >h4{
+                                width: 100%;
+                                margin-top: 10px;
+                                >a{
+                                    color: #0e132a;
+                                    height: 100%;
+                                    font-size: 30px;
+                                    text-decoration: none;
+                                    &:hover{
+                                        color: #fafafa;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover{
+                            background-color: darkblue;
+                        }
+                        /* end _______________ of _____________ figcaption */
+                    }
+                    /* end _______________ of ________________figure */
+                }
+                /* end _________________ of _______________ section */
+            }
+            /* end ____________ of _______________ .project_img */
+        }
+        /* end _______________ of __________________ .container */
+        /* <!-- start______________________________________.contact_whith_area --> */
+        .contact_whith_area{
+            width: 100%;
+            height: 750px;
+            border: 3px solid black;
+            background-image: url(section-bg2.jpg);
+            background-size: cover;
+            >div{
+                width: 90%;
+                height: 90%;
+                /* border: 3px solid red; */
+                margin: 60px auto;
+                position: relative;
+                >h2{
+                    width: 100%;
+                    font-size: 70px;
+                    color: #fff;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    font-family: "Teko", sans-serif;
+                    padding-top: 160px;
+                    padding-left: 80px;
+                    &::after{
+                        content: 'Lat`s chat';
+                        display: block;
+                        font-size: 117px;
+                        color: transparent;
+                        -webkit-text-stroke: 1px #f6f7f8;
+                        position: absolute;
+                        top: 120px;
+                        left: 100px;
+                        opacity: 0.5;
+                    }
+                }
+                >span{
+                    width: 100%;
+                    >h4{
+                        width: 60%;
+                        color: #f6f7f8;
+                        text-transform: capitalize;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        padding-left: 90px;
+                        padding-top: 60px;
+                    }
+                }
+                /* end ________________ of _______________span */
+                >nav{
+                    width: 180px;
+                    height: 60px;
+                    /* border: 2px solid green; */
+                    text-align: center;
+                    line-height: 60px;
+                    background-color: white;
+                    margin-left: 90px;
+                    margin-top: 50px;
+                    position: relative;
+                    &::after{
+                        content:'';
+                        display: block;
+                        width: 100%;
+                        height: 0;
+                        background-color: #fb5102;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: .3s;
+                    }
+                    &:hover::after{
+                        height: 100%;
+                    }
+                    >li{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        list-style: none;
+                        z-index: 1 ;
+                        >a{
+                            font-size: 16px;
+                            color: #161e46;
+                            text-decoration: none;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+                /* end _______________ of __________________ nav */
+                >header{
+                    width: 88%;
+                    height: 230px;
+                    background-color: #FF5F13;
+                    margin-top: 80px;
+                    margin-left: 70px;
+                    display: flex;
+                    >div{
+                        height: 100%;
+                        width: 100%;
+                        /* border: 2px solid black; */
+                        &:nth-of-type(1){
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            >span{
+                                font-size: 70px;
+                                color: white;
+                                /* font-weight: 700; */
+                                position: absolute;
+                                top: 80px;
+                                left: 54px;
+                            }
+                            >p{
+                                color: white;
+                                text-transform: capitalize;
+                                margin-top: 70px;
+                                margin-left: 124px;
+                                font-size:20px;
+                            }
+                            >h5{
+                                color: white;
+                                text-transform: capitalize;
+                                padding-top: 10px;
+                                margin-left: 135px;
+                                font-size: 35px; 
+                            }
+                        }
+                        /* end _______________ of _________________ div1 */
+                        &:nth-of-type(2){
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            >span{
+                                font-size: 70px;
+                                color: white;
+                                /* font-weight: 700; */
+                                position: absolute;
+                                top: 80px;
+                                left: 54px;
+                            }
+                            >p{
+                                color: white;
+                                text-transform: capitalize;
+                                margin-top: 70px;
+                                margin-left: 124px;
+                                font-size:20px;
+                            }
+                            >h5{
+                                color: white;
+                                text-transform: capitalize;
+                                padding-top: 10px;
+                                margin-left: 135px;
+                                font-size: 35px; 
+                            }  
+                        }
+                        /* end _______________ of _________________ div2 */
+                        &:nth-of-type(3){
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            >span{
+                                font-size: 70px;
+                                color: white;
+                                /* font-weight: 700; */
+                                position: absolute;
+                                top: 80px;
+                                left: 54px;
+                            }
+                            >p{
+                                color: white;
+                                text-transform: capitalize;
+                                margin-top: 70px;
+                                margin-left: 124px;
+                                font-size:20px;
+                            }
+                            >h5{
+                                color: white;
+                                text-transform: capitalize;
+                                padding-top: 10px;
+                                margin-left: 135px;
+                                font-size: 35px; 
+                            }
+                        }
+                        /* end _______________ of _________________ div3 */
+                    }
+                    /* end _______________ of _________________ div */
+                }
+                /* end ______________ of __________________ header */
+            }
+            /* end____________ of __________________ div */
+        }
+        /* <!-- end________________________ of _______________________.contact_whith_area --> */
+        /* <!-- start_____________________________________________ .nav_img --> */
+        .nav_img{
+            width: 100%;
+            height: 150vh;
+            /* border: 3px solid black; */
+            margin-top: 130px;
+            position: relative;
+            >div{
+                width: 100%;
+                height: 250px;
+                /* border: 3px solid gold; */
+                &::after{
+                    content: 'EXPARTS';
+                    display: block;
+                    font-size: 114px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    -webkit-text-stroke: 1px #f6f7f8;
+                    color: transparent;
+                    margin: 0;
+                    line-height: 1;
+                    transform: translateY(-114%);
+                    position: absolute;
+                    top: 200px;
+                    left: 134px;
+                }
+                >h2{
+                    color: #0e132a;
+                    font-size: 70px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    font-family: "Teko", sans-serif;
+                    padding-left: 108px;
+                    position: absolute;
+                    z-index: 1;
+                    padding-top:100px;
+                }
+            }
+            /* end__________________ of _____________div */
+            >section{
+                width: 100%;
+                height: 600px;
+                /* border: 2px solid green; */
+                display: flex;
+                justify-content: space-evenly;
+                >figure{
+                    width: 400px;
+                    height: 520px;
+                    /* border: 3px solid purple; */
+                    >img{
+                        width: 100%;
+                    }
+                    >figcaption{
+                        width: 100%;
+                        position: relative;
+                        >span{
+                            position: absolute;
+                            /* font-size: 17; */
+                            color: #0e132a;
+                            font-weight: 700;
+                            font-size: 25px;
+                            font-family: "Teko", sans-serif;
+                            top: 40px;
+                            left: 0;
+                        }
+                        >h3{
+                            color: #ff5f13;
+                            font-size: 14px;
+                            font-weight: 500;
+                            font-family: "Teko", sans-serif;
+                            display: block;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+            /* end__________________ of _____________section */
+        }
+        /* <!-- end___________________________ of ________________________.nav_img --> */
+        /* <!-- start__________________________________________________ #information --> */
+        #information{
+            width: 100%;
+            height: 100vh;
+            background-color: #00235b;
+            position: relative;
+            >div{
+                width: 90%;
+                height: 90%;
+                /* border: 3px solid black; */
+                margin: 100px auto;
+                position: relative;
+                &::after{
+                    content:'feedback';
+                    display: block;
+                    font-size: 130px;
+                    text-transform: capitalize;
+                    position: absolute;
+                    top: 11px;
+                    left: 178px;
+                    color: transparent;
+                    -webkit-text-stroke: 1px #f6f7f895;
+                    opacity: 0.5;
+                }
+                >h2{
+                    width: 100%;
+                    height: 100px;
+                    font-size: 70px;
+                    color: #fff;
+                    /* border: 2px solid red; */
+                    margin-top: 90px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    font-family: "Teko", sans-serif;
+                    padding-left: 90px;
+                    position: absolute;
+                    z-index: 1;
+                }
+                /* end _____________ of ___________ h2 */
+                >p{
+                    width: 60%;
+                    color: #a4acc3;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    font-size: 16px;
+                    padding-top: 250px;
+                    padding-left: 100px;
+                    user-select: none;
+                }
+                /* end ________________ of _____________p */
+                >header{
+                    width: 150px;
+                    height: 60px;
+                    /* border: 2px solid gold; */
+                    border-left: 3px solid #fb5102;
+                    text-align: center;
+                    margin-top: 50px;
+                    margin-left: 90px;
+                    >span{
+                        width: 100%;
+                        color: #fff;
+                        font-weight: 300;
+                        font-size: 20px;
+                    }
+                    >p{
+                        width: 100%;
+                        font-size: 15px;
+                        color: #677294;
+                        font-weight: 500;
+                        line-height: 1.5
+                    }
+                }
+                /* end__________________ of ______________ header */
+                >.icons{
+                    height: 100px;
+                    /* border: 2px solid black; */
+                    position: absolute;
+                    bottom: 35px;
+                    right: 200px;
+                    >a{
+                        width: 100%;
+                        font-size: 30px;
+                        color: white;
+                    }
+                    /* end______________ of ___________ icon */
+                }
+            }
+            /* end _____________ of ________________ div */
+        }
+        /* <!-- end ____________________________ of _____________________ #information --> */
+        /* <!-- start_____________________________________________ .latest_area  --> */
+        .latest_area{
+            width: 100%;
+            height: 140vh;
+            /* border: 3px solid black; */
+            margin-top: 100px;
+            position: relative;
+            >section{
+                width: 100%;
+                height: 150px;
+                /* border: 2px solid gold; */
+                display: flex;
+                justify-content: center;
+                >h2{
+                    width: 80%;
+                    height: 100%;
+                    /* border: 3px solid rebeccapurple; */
+                    color: #0e132a;
+                    font-size: 70px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    font-family: "Teko", sans-serif;
+                    padding-top: 70px;
+                    &::after{
+                        content:'OUR BLOG';
+                        display: block;
+                        font-size: 110px;
+                        position: absolute;
+                        top: 24px;
+                        bottom: 0;
+                        font-family: "Teko", sans-serif;
+                        color: white;
+                        -webkit-text-stroke: 1px #f6f7f8;
+                        z-index: -1;
+                    }
+                }
+            }
+            /* end _________ of ______________ section */
+            >div{
+                width: 100%;
+                height: 80%;
+                /* border: 2px solid green; */
+                display: flex;
+                justify-content: space-evenly;
+                position: relative;
+                >figure{
+                    width: 650px;
+                    height: 370px;
+                    margin-top: 30px;
+                    /* border: 3px solid red; */
+                    &::after{
+                        content: '24 NOW';
+                        display: block;
+                        width: 90px;
+                        height: 80px;
+                        background-color: #FF5F13;
+                        position: absolute;
+                        top: 30px;
+                        text-align: center;
+                        line-height: 80px;
+                        font-size: 20px;
+                        color: white;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    }
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    >figcaption{
+                        width: 100%;
+                        height: 50%;
+                        background-color: #1f2b7b;
+                        position: relative;
+                        >section{
+                            width: 50%;
+                            height: 90%;
+                            /* border: 2px solid black; */
+                            flex-direction: column;
+                            margin-left: 20px;
+                            padding-top: 10px;
+                            >p{
+                                width: 90px;
+                                height: 50px;
+                                /* border: 2px solid gold; */
+                                color: #a4acc3;
+                                line-height: 50px;
+                            }
+                            >li{
+                                list-style: none;
+                                padding-top: 10px;
+                                &:nth-of-type(1){
+                                    >a{
+                                        width: 40px;
+                                        height: 50px;
+                                        color: #fff;
+                                        font-weight: 700;
+                                        font-size: 25px;
+                                        line-height: 1.5;
+                                        padding-right: 56px;
+                                        margin-bottom: 17px;
+                                        text-decoration: none
+                                    }
+                                }
+                                &:nth-of-type(2){
+                                    transition: .4s;
+                                    >a{
+                                        text-decoration: none;
+                                        color: #fb5102;
+                                        font-size: 20px;
+                                    }
+                                    &:hover{
+                                        border-bottom: 2px solid #fb5102;
+                                        width: 110px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /* end ____________ of ______________ div */
+        }
+        /* <!-- end___________________________ of _____________________ .latest_area  --> */
+        /* <!-- start__________________________________________________ footer --> */
+        .footer{
+            width: 100%;
+            height: 90vh;
+            background-color: #070b11;
+            position: relative;
+            >section{
+                width: 90%;
+                height: 90%;
+                /* border: 2px solid gold; */
+                margin: 100px auto;
+                margin-block: 20px;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 80px;
+                >div{
+                    width: 300px;
+                    height: 80%;
+                    /* border: 2px solid red; */
+                    &:nth-of-type(1){
+                        >p{
+                            color: #9fa6bd;
+                            font-size: 20px;
+                            text-transform: capitalize;
+                            padding-top: 40px;
+                        }
+                    }
+                    /* end _____________ of ___________ div1 */
+                    &:nth-of-type(2){
+                        >h4{
+                            color: white;
+                            font-size: 40px;
+                            padding-top: 10px;
+                        }
+                        >ul{
+                            list-style: none;
+                            >li{
+                                margin-top: 40px;
+                                >a{
+                                    display: block;
+                                    /* border: 3px solid green; */
+                                    font-size: 20px;
+                                    text-transform: capitalize;
+                                    padding-top: 30px;
+                                    color: #9fa6bd;
+                                    text-decoration: none;
+                                    margin-top: 10px;
+                                    transition: .5s;
+                                    &:hover{
+                                        color: #fb5102;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    /* end ____________ of ______________div 2*/
+                    &:nth-of-type(3){
+                        >h4{
+                            color: white;
+                            font-size: 40px;
+                            padding-top: 10px;
+                            text-align: center;
+                        }
+                        >p{
+                            color: #9fa6bd;
+                            font-size: 16px;
+                            padding-top: 10px;
+                            margin-top: 30px;
+                            font-weight: normal;
+                        }
+                        >li{
+                            >a{
+                                margin-top: 20px;
+                                display: block;
+                                font-size: 20px;
+                                color: #9fa6bd;
+                                text-decoration: none;
+                                transition: .6s;
+                                &:hover{
+                                    color: #fb5102;
+                                }
+                            }
+                        }
+                    }
+                    /* end ______________ of ______________ div3 */
+                    &:nth-of-type(4){
+                        >input{
+                            width: 170px;
+                            height: 50px;
+                            background-color: #1e293a;
+                            color: #fff;
+                            padding-left: 40px;
+                            font-size: 15px;
+                            outline: none;
+                            border: none;
+                        }
+                        >button{
+                            width: 120px;
+                            height: 50px;
+                            background-color: #0a0f17;
+                            cursor: pointer;
+                            color: #f6f7f8;
+                            border: none;
+                        }
+                        >figure{
+                            margin-top: 40px;
+                            >img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    /* end ____________ of ______________ div 4*/
+                }
+                /* end ____________ of ______________ all div */
+            }
+            >nav{
+                width: 70%;
+                height: 40px;
+                /* background-color: red; */
+                display: flex;
+                position: absolute;
+                left: 95px;
+                bottom: 96px;
+                >p{
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    color: #9fa6bd;
+                }
+                >a{
+                    font-size: 20px;
+                    padding-left: 6px;
+                    padding-top: 2px;
+                    color: #fb5102;
+                    text-decoration: none;
+                }
+            }
+            /* end _______________ of _______________ nav */
+        }
+        /* <!-- end _____________________ of -________________ footer --> */
+    </style>
+</head>
+<body>
+    
+    <!-- start____________________ of ______________ .box -->
+    <div class="box">
+        <section>
+            <div>
+                <ul>
+                    <li>+(123) 1234-567-8901</li>
+                    <li> info@domain.com</li>
+                    <li> Mon - Sat 8:00 - 17:30, Sunday - CLOSED</li>
+                </ul>
+            </div> 
+            <!-- end______________ of ______________ div -->
+            <nav>
+
+                <span><a href=""><i class="bi bi-apple"></i></a></span>
+                <span><a href=""><i class="bi bi-linkedin"></i></a></span>
+                <span><a href=""><i class="bi bi-facebook"></i></a></span>
+                <span><a href=""><i class="bi bi-twitter"></i></a></span>
+            </nav>
+        </section>
+        <!-- end _________ of ____________ section1 -->
+        <section>
+            <figure>
+                <a href=""><img src="logo.png" alt=""></a>
+            </figure>
+
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">project</a></li>
+                <li><a href="">service</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">pages</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+            <div>
+                <li><a href="">contact now</a></li>
+            </div>
+        </section>
+        <!-- end _____________ of _____________ section2 -->
+    </div>
+    <!-- end ____________ of _____________ .box -->
+
+    <!-- start____________________ of ______________ #section_img -->
+    <section id="section_img">
+        <img src="h1_hero.jpg" alt="">
+
+        <header>
+            <span>HAND CAR WASH AND DETAILAING SERVICES</sp>
+        </header>
+        <section>
+            <h1>ADVANCED</h1>
+            <h2>CONSTRUCTION</h2>
+        </section>
+        <footer>
+            <span>OUR SERVICE</span>
+        </footer>
+    </section>
+    <!-- end ______________ of ___________ #section_img -->
+
+    <!-- start____________________ of _______________ .header_selector -->
+    <header class="header_selctor">
+        <section>
+            <h1>OUR SERVICE</h1>
+        </section>
+        <div>
+            <div class="row">
+                <figure>
+                    <img src="servicess1.png.webp" alt="">
+                    <h4>
+                        <a href="">Engineering techniques & implementation</a>
+                        <a href="">RED MORE</a>
+                    </h4>
+                </figure>
+                <figure>
+                    <img src="servicess2.png.webp" alt="">
+                    <h4>
+                        <a href="">Engineering techniques & implementation</a>
+                        <a href="">RED MORE</a>
+                    </h4>
+                </figure>
+                <figure>
+                    <img src="servicess3.png.webp" alt="">
+                    <h4>
+                        <a href="">Engineering techniques & implementation</a>
+                        <a href="">RED MORE</a>
+                    </h4>
+                </figure>
+                <!-- end ____________ of ______________ figure -->
+            </div>
+            <!-- end ____________ of ____________ .row -->
+        </div>
+        <!-- end _____________ of ____________ div -->
+    </header>
+    <!-- end _____________ of __________ header_selctor -->
+
+    <!-- start____________________ of ____________ #section_information -->
+    <section id="section_information">
+         <div class="left_content">
+            <h2>WHO WE ARE</h2>
+            <div class="suport_caption">
+                <p>
+                    Mollit anim laborum duis au dolor in voluptcate velit ess cillum dolore eu lore dsu quality mollit anim laborumuis au dolor in voluptate velit cillu.
+                </p>
+            </div>
+            <!-- end__________________ of ______________- .suport_caption -->
+            <section class="pera_top">
+                <p>
+                    Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.
+                </p>
+            </section>
+            <!-- end __________________ of __________________ .pera_top -->
+             <div class="click">
+                <li><a href="">READ MORE</a></li>
+             </div>
+         </div>
+         <!-- end _____________ of __________ .left_content -->
+        <div class="right_img">
+            <img src="safe_in.png (1).webp" alt="">
+            <div class="row">
+                <span>1994</span>
+                <p>SINCE</p>
+            </div>
+        </div>
+        <!-- end__________________ of _____________ .right_img -->
+    </section>
+    <!-- end _____________ of ______________#section_information -->
+
+    <!-- start____________________ .container -->
+    <header class="container">
+        <nav>
+            <section>
+                <h2>Our Projects</h2>
+            </section>
+            <section>
+                <li>
+                    <a href="">show all</a>
+                    <a href="">intorior</a>
+                    <a href="">recent</a>
+                    <a href="">big bulding</a>
+                    <a href="">park</a>
+                </li>
+            </section>
+        </nav>
+        <!-- end______________ of ______________ nav -->
+        <div class="project_img">
+            <section>
+                <figure>
+                    <img src="project1.png.webp" alt="">
+                    <figcaption>
+                        <h4>
+                            <a href="">Floride Chemicals</a>
+                        </h4>
+                        <h4>
+                            <a href="">Factory</a>
+                        </h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="project2.png.webp" alt="">
+                    <figcaption>
+                        <h4>
+                            <a href="">Floride Chemicals</a>
+                        </h4>
+                        <h4>
+                            <a href="">Factory</a>
+                        </h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="project3.png.webp" alt="">
+                    <figcaption>
+                        <h4>
+                            <a href="">Floride Chemicals</a>
+                        </h4>
+                        <h4>
+                            <a href="">Factory</a>
+                        </h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="project4.png.webp" alt="">
+                    <figcaption>
+                        <h4>
+                            <a href="">Floride Chemicals</a>
+                        </h4>
+                        <h4>
+                            <a href="">Factory</a>
+                        </h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="project5.png.webp" alt="">
+                    <figcaption>
+                        <h4>
+                            <a href="">Floride Chemicals</a>
+                        </h4>
+                        <h4>
+                            <a href="">Factory</a>
+                        </h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="project6.png.webp" alt="">
+                    <figcaption>
+                        <h4>
+                            <a href="">Floride Chemicals</a>
+                        </h4>
+                        <h4>
+                            <a href="">Factory</a>
+                        </h4>
+                    </figcaption>
+                </figure>
+                <!-- end__________________ of ___________________ all figure -->
+            </section>
+            <!-- end ______________ of ______________section -->
+        </div>
+        <!-- end__________________ of _____________ .project_img -->
+    </header>
+    <!-- end ________________ of _______________ .container -->
+    <!-- start______________________________________.contact_whith_area -->
+    <section class="contact_whith_area">
+        <div>
+            <h2>Lats talk with us</h2>
+            <span>
+                <h4>
+                    Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.
+                </h4>
+            </span>
+            <!-- end ______________ of __________________ span -->
+            <nav>
+                <li>
+                    <a href="">READ MORE</a>
+                </li>
+            </nav>
+            <!-- end _____________- of _____________ nav -->
+            <header>
+                <div>
+                    <span>34</span>
+                    <p>Machinery</p>
+                    <h5>Tools</h5>
+                </div>
+                <div>
+                    <span>76</span>
+                    <p>Machinery</p>
+                    <h5>Tools</h5>
+                </div>
+                <div>
+                    <span>8</span>
+                    <p>Machinery</p>
+                    <h5>Tools</h5>
+                </div>
+            </header>
+            <!-- end__________________ of _________________ header -->
+        </div>
+        <!-- end _____________- 0f ________________ div -->
+    </section>
+    <!-- end________________________ of _______________________.contact_whith_area -->
+    <!-- start_____________________________________________ .nav_img -->
+    <div class="nav_img">
+            <div>
+                <h2>Our team</h2>
+            </div>
+            <section>
+                <figure>
+                    <img src="team1.png.webp" alt="">
+                    <figcaption>
+                        <span>UX Designer</span>
+                        <h3>_____Ethan Welch</h3>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="team2.png.webp" alt="">
+                    <figcaption>
+                        <span>UX Designer</span>
+                        <h3>_____Ethan Welch</h3>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="team3.png.webp" alt="">
+                    <figcaption>
+                        <span>UX Designer</span>
+                        <h3>_____Ethan Welch</h3>
+                    </figcaption>
+                </figure>
+            </section>
+            <!-- end _____________ of _______________ section -->
+    </div>
+    <!-- end___________________________ of ________________________.nav_img -->
+    <!-- start__________________________________________________ #information -->
+    <section id="information">
+            <div>
+                <h2>Testimonial</h2>
+                <p>
+                    Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim. Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjn.z
+                </p>
+                <header>
+                    <span>Jessya Inn</span>
+                    <p>Co Founder</p>
+                </header>
+                <span class="icons">
+                    <a href=""><i class="bi bi-chevron-left"></i></a>
+                    <a href=""><i class="bi bi-chevron-right"></i></a>
+                </span>
+            </div>
+            <!-- end __________________________ of _________________ div -->
+    </section>
+    <!-- end ____________________________ of _____________________ #information -->
+    <!-- start_____________________________________________ .latest_area  -->
+    <div class="latest_area">
+        <section>
+            <h2>latest news</h2>
+        </section>
+        <div>
+            <figure>
+                <img src="david_1.png.webp" alt="">
+                <figcaption>
+                    <section>
+                        <p>|     Porperties</p>
+                        <li><a href="">Footprints in Time is perfect House in Kurashiki</a></li>
+                        <li><a href="">Read more »</a></li>
+                    </section>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="david_2.png.webp" alt="">
+                <figcaption>
+                    <section>
+                        <p>|     Porperties</p>
+                        <li><a href="">Footprints in Time is perfect House in Kurashiki</a></li>
+                        <li><a href="">Read more »</a></li>
+                    </section>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- end _______________ of ___________ div -->
+    </div>
+    <!-- end___________________________ of _____________________ .latest_area  -->
+    <!-- start__________________________________________________ footer -->
+    <footer class="footer">
+        <section>
+            <div>
+                <figure>
+                    <img src="logo.png" alt="">
+                </figure>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.
+                </p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>
+                        <a href="">about</a>
+                        <a href="">service</a>
+                        <a href="">projects</a>
+                        <a href="">contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>198 West 21th Street, Suite 721 New York,NY 10010</p>
+                <li>
+                    <a href="">Phone: +95 (0) 123 456 789</a>
+                    <a href="">Cell: +95 (0) 123 456 789</a>
+                </li>
+            </div>
+            <div>
+                <input type="email" placeholder="Email Address">
+                <button>SING UP</button>
+                <figure>
+                    <img src="map-footer.png.webp" alt="">
+                </figure>
+            </div>
+        </section>
+        <!-- end __________________ 0f ________________ section -->
+        <nav>
+            <p>Copyright ©2024 All rights reserved | This template is made with 😁by</p>
+            <a href="">Fardows 😁😁😁frontend 😜developer</a>
+        </nav>
+        <!-- end ________________ of ______________ nav -->
+    </footer>
+    <!-- end _____________________ of -________________ footer -->
+</body>
+</html>
